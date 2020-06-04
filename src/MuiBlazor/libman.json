@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "mui@3.7.1",
+      "destination": "wwwroot/mui/",
+      "files": [
+        "js/mui.min.js",
+        "fonts/mui.ttf",
+        "js/mui.js",
+        "css/mui.css",
+        "css/mui.min.css"
+      ]
+    }
+  ]
+}

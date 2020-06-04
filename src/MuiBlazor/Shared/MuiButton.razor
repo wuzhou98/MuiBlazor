@@ -1,0 +1,92 @@
+﻿
+@using System.Text;
+
+<button type="@ButtonType" class="@CssClass" @onclick="Click" >@ButtonText</button>
+
+
+
+@code {
+
+	[Parameter]
+	public string Text { get; set; }
+
+	[Parameter]
+	public string ChildContent { get; set; }
+
+	[Parameter]
+	public string Type { get; set; }
+
+	[Parameter]
+	public bool IsSubmit { get; set; }
+
+	[Parameter]
+	public bool IsReset { get; set; }
+
+	[Parameter]
+	public bool Outlined { get; set; }
+
+	[Parameter]
+	public Action BtnClick { get; set; }
+
+	private string CssClass {
+		get {
+			var s = new StringBuilder("mui-btn");
+
+			if (Outlined) {
+				s = s.Append(" mui-btn-outlined");
+			}
+
+			if (string.Equals(Type, "primary", StringComparison.OrdinalIgnoreCase)) {
+				s = s.Append(" mui-btn-primary");
+			}
+			else if (string.Equals(Type, "success", StringComparison.OrdinalIgnoreCase)) {
+				s = s.Append(" mui-btn-success");
+			}
+			else if (string.Equals(Type, "warning", StringComparison.OrdinalIgnoreCase)) {
+				s = s.Append(" mui-btn-warning");
+			}
+			else if (string.Equals(Type, "danger", StringComparison.OrdinalIgnoreCase)) {
+				s = s.Append(" mui-btn-danger");
+			}
+			else if (string.Equals(Type, "royal", StringComparison.OrdinalIgnoreCase)) {
+				s = s.Append(" mui-btn-royal");
+			}
+
+			return s.ToString();
+		}
+	}
+
+	private void Click() {
+		BtnClick();
+	}
+
+
+	private string ButtonText {
+		get {
+			if (string.IsNullOrEmpty(Text) && string.IsNullOrEmpty(ChildContent)) {
+				return "Button";
+			}
+
+			if (!string.IsNullOrEmpty(ChildContent)) {
+				return ChildContent;
+			}
+
+			return Text;
+		}
+	}
+
+
+	private string ButtonType {
+		get {
+			if (IsSubmit) {
+				return "submit";
+			}
+
+			if (IsReset) {
+				return "reset";
+			}
+
+			return "button";
+		}
+	}
+}

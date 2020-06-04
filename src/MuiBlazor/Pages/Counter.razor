@@ -1,0 +1,29 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<MuiButton Type="success" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Type="primary" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Type="warning" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Type="danger" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Type="royal" BtnClick="@IncrementCount" Text="Click me" />
+
+
+<MuiButton Outlined=true Type="success" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Outlined=true BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Outlined=true Type="primary" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Outlined=true Type="warning" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Outlined=true Type="danger" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Outlined=true Type="royal" BtnClick="@IncrementCount" Text="Click me" />
+
+@code {
+	private int currentCount = 0;
+
+	private void IncrementCount() {
+		currentCount++;
+		StateHasChanged();
+	}
+}
