@@ -1,0 +1,55 @@
+﻿@inherits MuiComponentBase
+
+<nav class="mui-bar mui-bar-tab">
+	@foreach (var item in Items) {
+	<a class="mui-tab-item mui-active" href="#tabbar">
+		<span class="mui-icon mui-icon-home"></span>
+		<span class="mui-tab-label">首页</span>
+	</a>
+	}
+	
+	@*<a class="mui-tab-item" href="#tabbar-with-chat">
+		<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+		<span class="mui-tab-label">消息</span>
+	</a>
+	<a class="mui-tab-item" href="#tabbar-with-contact">
+		<span class="mui-icon mui-icon-contact"></span>
+		<span class="mui-tab-label">通讯录</span>
+	</a>
+	<a class="mui-tab-item" href="#tabbar-with-map">
+		<span class="mui-icon mui-icon-gear"></span>
+		<span class="mui-tab-label">设置</span>
+	</a>*@
+</nav>
+
+@code {
+	[Parameter]
+	public TabbarItem[] Items { get; set; } = new TabbarItem[0];
+
+	/// <summary>
+	/// TabBar项
+	/// </summary>
+	public class TabbarItem {
+		/// <summary>
+		/// 是否活动项，得到焦点的项。 
+		/// </summary>
+		public bool Actived { get; set; }
+
+		/// <summary>
+		/// 排序值，值小的会排在左面或上面。
+		/// </summary>
+		public int Order { get; set; }
+
+		/// <summary>
+		/// 链接地址，点击后跳转到的URL
+		/// </summary>
+		public string Url { get; set; }
+
+		/// <summary>
+		/// 图标名称
+		/// </summary>
+		public string IconName { get; set; }
+
+	}
+
+}

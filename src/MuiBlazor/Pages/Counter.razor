@@ -4,7 +4,7 @@
 
 <p>Current count: @currentCount</p>
 
-<MuiButton Type="success" BtnClick="@IncrementCount" Text="Click me" />
+<MuiButton Type="success" BtnClick="@IncrementCount">Click me</MuiButton>
 <MuiButton BtnClick="@IncrementCount" Text="Click me" />
 <MuiButton Type="primary" BtnClick="@IncrementCount" Text="Click me" />
 <MuiButton Type="warning" BtnClick="@IncrementCount" Text="Click me" />
@@ -18,6 +18,13 @@
 <MuiButton Outlined=true Type="warning" BtnClick="@IncrementCount" Text="Click me" />
 <MuiButton Outlined=true Type="danger" BtnClick="@IncrementCount" Text="Click me" />
 <MuiButton Outlined=true Type="royal" BtnClick="@IncrementCount" Text="Click me" />
+
+<hr />
+
+<MuiIcon IconName="mui-icon-contact" />
+<MuiIcon IconName="person" style="font-size:60px;" />
+<MuiIcon IconName="image" />
+
 
 @code {
 	private int currentCount = 0;

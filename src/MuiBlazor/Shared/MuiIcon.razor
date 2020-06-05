@@ -1,0 +1,22 @@
+﻿@inherits MuiComponentBase
+
+<span class="@CssClass" style="@Style"></span>
+
+@code {
+	[Parameter]
+	public string IconName { get; set; }
+
+	protected override string CssClass {
+		get {
+			if (string.IsNullOrEmpty(IconName)) {
+				return "mui-icon mui-icon-help";
+			}
+
+			if (IconName.StartsWith("mui-icon-",StringComparison.OrdinalIgnoreCase)) {
+				return "mui-icon " + IconName.ToLower();
+			}
+
+			return "mui-icon mui-icon-" + IconName.ToLower();
+		}
+	}
+}

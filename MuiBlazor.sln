@@ -9,15 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{1A975A92-4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D35092A1-374E-44C5-A160-5FB7137C8DAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuiBlazorDemo.Server", "demo\MuiBlazorDemo\Server\MuiBlazorDemo.Server.csproj", "{AAB1821F-6190-41BF-A1F4-A86DD7DE3E8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuiBlazorDemo.Server", "demo\MuiBlazorDemo\Server\MuiBlazorDemo.Server.csproj", "{AAB1821F-6190-41BF-A1F4-A86DD7DE3E8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuiBlazorDemo.Client", "demo\MuiBlazorDemo\Client\MuiBlazorDemo.Client.csproj", "{C89AF7A5-5AD2-47A9-A248-EF593D233A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuiBlazorDemo.Client", "demo\MuiBlazorDemo\Client\MuiBlazorDemo.Client.csproj", "{C89AF7A5-5AD2-47A9-A248-EF593D233A19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuiBlazorDemo.Shared", "demo\MuiBlazorDemo\Shared\MuiBlazorDemo.Shared.csproj", "{4AEE25FE-BC55-4BDB-9F0C-7954C9C2C265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuiBlazorDemo.Shared", "demo\MuiBlazorDemo\Shared\MuiBlazorDemo.Shared.csproj", "{4AEE25FE-BC55-4BDB-9F0C-7954C9C2C265}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuiBlazor", "src\MuiBlazor\MuiBlazor.csproj", "{1A3C3C03-061B-4920-9C60-1E8F32A2E880}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuiBlazor", "src\MuiBlazor\MuiBlazor.csproj", "{1A3C3C03-061B-4920-9C60-1E8F32A2E880}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MuiBlazorDocs", "docs\MuiBlazorDocs\MuiBlazorDocs.csproj", "{8C3ED5BB-1C55-4B2C-AA08-B886900FA9E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MuiBlazorDocs", "docs\MuiBlazorDocs\MuiBlazorDocs.csproj", "{8C3ED5BB-1C55-4B2C-AA08-B886900FA9E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
